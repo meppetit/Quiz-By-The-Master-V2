@@ -86,3 +86,14 @@ android-sdk/
 credentials.json
 *.key
 .credentials
+
+# Local Postgres cluster data (never commit)
+data/
+/data/postgres/
+
+# Build output
+frontend/build/
+
+# Test artifacts
+test_reports/
+.ruff_cache/

@@ -62,8 +62,7 @@ Repo layout that matters:
 | **Region** | **Singapore** (closest Render region to Supabase Mumbai) |
 | Branch | `main` |
 | **Root Directory** | `backend` |
-| Build Command | `pip install -r requirements.txt` |
-| Start Command | `gunicorn server:app -k uvicorn.workers.UvicornWorker -w 4 -b 0.0.0.0:$PORT --timeout 60` |
+| Build Command | `pip install -r requirements.txt` || Start Command | `gunicorn server:app -k uvicorn.workers.UvicornWorker -w 4 -b 0.0.0.0:$PORT --timeout 60` |
 | Instance Type | **Starter** or higher — *not* Free (Free instances sleep and cold-start ~50 s, fatal on event day) |
 
 > `$PORT` is supplied by Render. Do not hardcode 8001.
